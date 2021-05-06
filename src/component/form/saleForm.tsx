@@ -22,7 +22,7 @@ class SaleForm extends Component<basicFormProps>{
       this.props.form.validateFields().then(values => {
         const get_sale = () => {
           post({
-            url: '/api/question8/sales/',
+            url: 'https://software-test-platform-api.herokuapp.com/question8/sales/',
             data: {
               annual_sales: parseInt(this.state.inpValue1),
               leave_days: parseFloat(this.state.inpValue2),

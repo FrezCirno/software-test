@@ -29,7 +29,7 @@ class CommissionForm extends Component<basicFormProps> {
     this.props.form.validateFields().then(values => {
       const get_commission = () => {
         post({
-          url: '/api/question2/commission/',
+          url: 'https://software-test-platform-api.herokuapp.com/question2/commission/',
           data: {
             host: parseInt(this.state.inpValue1),
             display: parseInt(this.state.inpValue2),

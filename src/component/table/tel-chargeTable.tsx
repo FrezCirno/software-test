@@ -66,7 +66,7 @@ class ChargeTable extends React.Component {
   onChange = (value: any) => {
 
     post({
-      url: '/api/show-csv/',
+      url: 'https://software-test-platform-api.herokuapp.com/show-csv/',
       data: {
         problem: 'charge',
         method_type: value
@@ -99,7 +99,7 @@ class ChargeTable extends React.Component {
 
     axios({
       method: 'get',
-      url: `http://106.15.194.220:1216/question7/charge/` + value + `/` + this.state.version,
+      url: `https://software-test-platform-api.herokuapp.com/question7/charge/` + value + `/` + this.state.version,
     }).then((response) => {
       console.log(response.data.True);
       this.setState({

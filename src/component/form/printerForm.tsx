@@ -20,7 +20,7 @@ class PrinterForm extends Component<basicFormProps>{
             this.props.form.validateFields().then(values => {
                 const get_printer = () => {
                     post({
-                        url: '/api/question6/printer/',
+                        url: 'https://software-test-platform-api.herokuapp.com/question6/printer/',
                         data: {
                             command: this.state.inpValue1,
                         },

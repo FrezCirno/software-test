@@ -62,7 +62,7 @@ class CommissionTable extends React.Component {
   onChange = (value: any) => {
 
     post({
-      url: '/api/show-csv/',
+      url: 'https://software-test-platform-api.herokuapp.com/show-csv/',
       data: {
         problem: 'commission',
         method_type: value
@@ -96,7 +96,7 @@ class CommissionTable extends React.Component {
     });
 
     get({
-      url: `http://106.15.194.220:1216/question2/commission/` + value,
+      url: `https://software-test-platform-api.herokuapp.com/question2/commission/` + value,
     }).then((response_data) => {
       console.log(response_data.True);
       this.setState({

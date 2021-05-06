@@ -51,7 +51,7 @@ class PrinterTable extends React.Component{
 
     onChange = (value: any) => {
         post({
-            url: '/api/show-csv/',
+            url: 'https://software-test-platform-api.herokuapp.com/show-csv/',
             data: {
                 problem: 'printer',
                 method_type: value
@@ -81,7 +81,7 @@ class PrinterTable extends React.Component{
 
         axios({
             method: 'get',
-            url: `http://106.15.194.220:1216/question6/printer/`+value,
+            url: `https://software-test-platform-api.herokuapp.com/question6/printer/`+value,
         }).then((response) => {
             console.log(response.data.True);
             this.setState({

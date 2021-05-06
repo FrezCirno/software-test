@@ -118,7 +118,7 @@ class SaleTable extends React.Component{
        }
 
        post({
-           url: '/api/show-csv/',
+           url: 'https://software-test-platform-api.herokuapp.com/show-csv/',
            data: {
                problem: 'sales',
                method_type: value
@@ -174,7 +174,7 @@ class SaleTable extends React.Component{
 
        axios({
            method: 'get',
-           url: `http://106.15.194.220:1216/question8/sales/`+value,
+           url: `https://software-test-platform-api.herokuapp.com/question8/sales/`+value,
        }).then((response) => {
            console.log(response.data.True);
            this.setState({

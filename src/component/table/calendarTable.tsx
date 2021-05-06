@@ -56,7 +56,7 @@ class CalendarTable extends React.Component {
   onChange = (value: any) => {
 
     post({
-      url: '/api/show-csv/',
+      url: 'https://software-test-platform-api.herokuapp.com/show-csv/',
       data: {
         problem: 'calendar',
         method_type: value
@@ -89,7 +89,7 @@ class CalendarTable extends React.Component {
 
     axios({
       method: 'get',
-      url: `http://106.15.194.220:1216/question1/calendar/` + value,
+      url: `https://software-test-platform-api.herokuapp.com/question1/calendar/` + value,
     }).then((response) => {
       console.log(response.data.True);
       this.setState({

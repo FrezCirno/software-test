@@ -12,7 +12,7 @@ class TriangleForm extends Component<basicFormProps> {
 
   handleSubmit = (values: any) => {
     post({
-      url: '/api/question1/triangle/',
+      url: 'https://software-test-platform-api.herokuapp.com/question1/triangle/',
       data: {
         edge1: parseInt(values.inpValue1),
         edge2: parseInt(values.inpValue2),

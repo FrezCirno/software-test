@@ -30,7 +30,7 @@ class TelChargeForm extends Component<basicFormProps>{
       this.props.form.validateFields().then(values => {
         const get_tel_charge = () => {
           post({
-            url: '/api/question7/charge/',
+            url: 'https://software-test-platform-api.herokuapp.com/question7/charge/',
             data: {
               talk_time_month: parseInt(this.state.inpValue1),
               unpaid_num_year: parseInt(this.state.inpValue2),

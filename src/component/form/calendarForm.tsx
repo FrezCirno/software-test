@@ -28,7 +28,7 @@ export default class CalendarForm extends Component<basicFormProps> {
     this.props.form &&
     this.props.form.validateFields().then(values => {
       post({
-        url: '/api/question1/calendar/',
+        url: 'https://software-test-platform-api.herokuapp.com/question1/calendar/',
         data: {
           year: parseInt(this.state.inpValue1),
           month: parseInt(this.state.inpValue2),
